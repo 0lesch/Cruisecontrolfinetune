@@ -18,7 +18,10 @@ Der vorhandenen Tempomatenanzeige im HUD wurde eine Nachkommastelle hinzugefügt
  
 Multiplayer wird unterstützt.
 
-Hinweis: Wenn die Entfernungseinheit auf Meilen gestellt ist, sind nun 0,625-Meilen-Sprünge erkennbar, wenn man den Tempomaten erhöht oder senkt. Dies liegt daran, dass das Spiel standardmäßig eine metrische Berechnung verwendet.]]>
+Hinweis: Wenn die Entfernungseinheit auf Meilen gestellt ist, sind nun 0,625-Meilen-Sprünge erkennbar, wenn man den Tempomaten erhöht oder senkt. Dies liegt daran, dass das Spiel standardmäßig eine metrische Berechnung verwendet.
+
+Feedback und Fehlerberichte auf GitHub:https://github.com/0lesch/Cruisecontrolfinetune/issues
+]]>
         </de>
         <en>
         <![CDATA[This mod makes it possible to decrease and increase the cruise control speed in increments of 0.1 km/h or MPH.
@@ -31,7 +34,10 @@ A decimal place has been added to the existing cruise control display in the HUD
 
 Multiplayer is supported.
 
-Note: If the distance unit is set to miles, 0.625-mile increments are now noticeable when increasing or decreasing the cruise control speed. This is because the game uses a metric calculation by default.]]>
+Note: If the distance unit is set to miles, 0.625-mile increments are now noticeable when increasing or decreasing the cruise control speed. This is because the game uses a metric calculation by default.
+
+Feedback and issues on GitHub:https://github.com/0lesch/Cruisecontrolfinetune/issues
+]]>
         </en>
     </description>
     <multiplayer supported="true" />
