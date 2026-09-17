@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="113">
+    <author>Ole_sch</author>
+    <version>1.0.0.0</version>
+    <title>
+        <de>Tempomat Feineinstellung</de>
+        <en>Cruise Control Fine Tune</en>
+    </title>
+   <description>
+        <de>
+        <![CDATA[Mit dieser Mod wird die Möglichkeit geschaffen den Tempomaten in 0.1Km/h bzw. Meilen schritten verringern und erhöhen zu können.
+
+Damit wird das Problem behoben, dass der durch Verschleiß von Maschinen entstehende Geschwindigkeitsverlust ein Nebenherfahren, beispielsweise beim Dreschen oder Maishäckseln, aufgrund eines zu ungenauen Tempomaten erschwert.
+
+Die Feinjustierung kann über zwei frei belegbare Tasten erfolgen. Standardmäßig verringert SHIFT+1 die Geschwindigkeit des Tempomaten, während SHIFT+2 sie erhöht.
+
+Der vorhandenen Tempomatenanzeige im HUD wurde eine Nachkommastelle hinzugefügt, sodass nun beispielsweise 5.8 km/h bzw. Meilen angezeigt werden können.
+ 
+Multiplayer wird unterstützt.
+
+Hinweis: Wenn die Entfernungseinheit auf Meilen gestellt ist, sind nun 0,625-Meilen-Sprünge erkennbar, wenn man den Tempomaten erhöht oder senkt. Dies liegt daran, dass das Spiel standardmäßig eine metrische Berechnung verwendet.]]>
+        </de>
+        <en>
+        <![CDATA[This mod makes it possible to decrease and increase the cruise control speed in increments of 0.1 km/h or MPH.
+
+This resolves the issue where speed loss caused by machinery wear makes driving alongside another vehicle—such as during combining or maize chopping—difficult due to the cruise control lacking sufficient precision.
+
+Fine-tuning can be controlled via two user-assignable keys. By default, SHIFT+1 decreases the cruise control speed, while SHIFT+2 increases it.
+
+A decimal place has been added to the existing cruise control display in the HUD, allowing speeds such as 5.8 km/h or MPH to be shown.
+
+Multiplayer is supported.
+
+Note: If the distance unit is set to miles, 0.625-mile increments are now noticeable when increasing or decreasing the cruise control speed. This is because the game uses a metric calculation by default.]]>
+        </en>
+    </description>
+    <multiplayer supported="true" />
+    <iconFilename>icon_CruiseControlFineTune.dds</iconFilename>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/CruiseControlFineTune.lua" />
+    </extraSourceFiles>
+
+    <actions>
+        <action name="CCFT_INC" category="VEHICLE" />
+        <action name="CCFT_DEC" category="VEHICLE" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="CCFT_INC">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_2" index="1" />
+        </actionBinding>
+        <actionBinding action="CCFT_DEC">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_1" index="1" />
+        </actionBinding>
+    </inputBinding>
+
+    <l10n>
+        <text name="input_CCFT_INC">
+            <en>Cruise control +0.1 km/h</en>
+            <de>Tempomat +0,1 km/h</de>
+        </text>
+        <text name="input_CCFT_DEC">
+            <en>Cruise control -0.1 km/h</en>
+            <de>Tempomat -0,1 km/h</de>
+        </text>
+    </l10n>
+</modDesc>
